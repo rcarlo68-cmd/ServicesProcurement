@@ -1,17 +1,15 @@
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import Situations from "../components/Situations";
-import Approach from "../components/Approach";
-import Sectors from "../components/Sectors";
+import Header from "../../components/Header";
+import ServicePage from "../../components/service/ServicePage";
 
-export default function Home() {
+export default function ProcurementPage() {
   return (
     <>
       <Header />
-      <Hero />
-      <Situations />
-      <Approach />
-      <Sectors />
+
+      <ServicePage
+        title="Procurement"
+        subtitle="Las mejores decisiones de compra comienzan mucho antes de emitir una orden de compra."
+      />
     </>
   );
 }
