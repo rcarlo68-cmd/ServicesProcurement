@@ -1,12 +1,11 @@
 import Header from "../../components/Header";
-import OperationsPage from "../../components/operations/OperationsPage";
+import InventoryPage from "../../components/inventory/InventoryPage";
 
 export default function Page() {
   return (
     <>
       <Header />
-
-      <OperationsPage />
+      <InventoryPage />
     </>
   );
 }

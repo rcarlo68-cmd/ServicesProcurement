@@ -1,5 +1,5 @@
 import Header from "../../components/Header";
-import ServicePage from "../../components/service/ServicePage";
+import ServicePage from "../../components/procurement/ServicePage";
 
 export default function ProcurementPage() {
   return (
