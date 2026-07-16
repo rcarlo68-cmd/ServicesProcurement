@@ -1,31 +1,138 @@
 export default function Hero() {
   return (
-    <section className="mx-auto max-w-7xl px-8 py-28">
+    <section className="bg-slate-950">
 
-      <div className="max-w-5xl">
+      <div className="mx-auto grid max-w-7xl items-center gap-16 px-8 py-24 lg:grid-cols-2">
 
-        <h1 className="text-6xl font-bold leading-tight text-slate-900">
-          Si todo apunta a su cadena de suministro...
-          <br />
-          está en el lugar correcto.
-        </h1>
+        {/* TEXTO */}
 
-        <p className="mt-10 text-2xl font-semibold text-slate-800">
-          No es el único.
-        </p>
+        <div>
 
-        <p className="mt-6 max-w-4xl text-xl leading-9 text-slate-600">
-          Cada semana trabajamos con organizaciones que enfrentan situaciones
-          que afectan el desempeño de sus operaciones. Algunas parecen
-          similares. Muy pocas tienen la misma causa.
-        </p>
+          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-400">
+            SERVICES PROCUREMENT
+          </p>
 
-        <a
-          href="#situaciones"
-          className="mt-14 inline-flex rounded-xl bg-slate-900 px-8 py-4 text-lg font-semibold text-white transition hover:bg-slate-700"
-        >
-          Explorar situaciones
-        </a>
+          <h1 className="mt-6 text-5xl font-bold leading-tight text-white lg:text-6xl">
+            La mayoría de las pérdidas operacionales
+            <br />
+            no ocurren donde usted las está buscando.
+          </h1>
+
+          <p className="mt-8 max-w-2xl text-xl leading-9 text-slate-300">
+            Analizamos cómo interactúan Producción, Mantenimiento,
+            Planeamiento, Compras, Inventarios y Logística para descubrir
+            las restricciones que limitan el desempeño de su operación.
+          </p>
+
+          <div className="mt-12 flex flex-wrap gap-4">
+
+            <a
+              href="#contacto"
+              className="rounded-xl bg-cyan-500 px-8 py-4 font-semibold text-slate-900 transition hover:bg-cyan-400"
+            >
+              Hablemos
+            </a>
+
+            <a
+              href="#sp6"
+              className="rounded-xl border border-slate-500 px-8 py-4 font-semibold text-white transition hover:border-cyan-400 hover:text-cyan-300"
+            >
+              Conozca el Modelo SP6
+            </a>
+
+          </div>
+
+          <div className="mt-16 grid grid-cols-2 gap-8 lg:grid-cols-4">
+
+            <div>
+              <h3 className="text-3xl font-bold text-cyan-400">
+                +30
+              </h3>
+
+              <p className="mt-2 text-sm text-slate-400">
+                Años de experiencia
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-white">
+                Minería
+              </h3>
+
+              <p className="mt-2 text-sm text-slate-400">
+                Energía · Manufactura
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-white">
+                Supply Chain
+              </h3>
+
+              <p className="mt-2 text-sm text-slate-400">
+                Procurement · Operaciones
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-white">
+                IA
+              </h3>
+
+              <p className="mt-2 text-sm text-slate-400">
+                Inteligencia aplicada
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* MOSAICO */}
+
+        <div className="grid grid-cols-2 gap-4">
+
+          <div className="col-span-2 h-72 overflow-hidden rounded-3xl bg-slate-800">
+            <img
+              src="/images/hero/operations-hero.jpg"
+              alt="Operaciones"
+              className="h-full w-full object-cover"
+            />
+          </div>
+
+          <div className="h-40 overflow-hidden rounded-2xl bg-slate-800">
+            <img
+              src="/images/hero/maintenance.jpg"
+              alt="Mantenimiento"
+              className="h-full w-full object-cover"
+            />
+          </div>
+
+          <div className="h-40 overflow-hidden rounded-2xl bg-slate-800">
+            <img
+              src="/images/hero/warehouse.jpg"
+              alt="Almacenes"
+              className="h-full w-full object-cover"
+            />
+          </div>
+
+          <div className="h-40 overflow-hidden rounded-2xl bg-slate-800">
+            <img
+              src="/images/hero/planning.jpg"
+              alt="Planeamiento"
+              className="h-full w-full object-cover"
+            />
+          </div>
+
+          <div className="h-40 overflow-hidden rounded-2xl bg-slate-800">
+            <img
+              src="/images/hero/procurement.jpg"
+              alt="Procurement"
+              className="h-full w-full object-cover"
+            />
+          </div>
+
+        </div>
 
       </div>
 
