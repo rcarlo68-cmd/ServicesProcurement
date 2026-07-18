@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="bg-slate-950">
 
-      <div className="mx-auto grid max-w-7xl items-center gap-16 px-8 py-24 lg:grid-cols-2">
+      <div className="mx-auto grid max-w-7xl items-center gap-20 px-8 py-16 lg:grid-cols-2">
 
         {/* TEXTO */}
 
@@ -12,13 +12,13 @@ export default function Hero() {
             SERVICES PROCUREMENT
           </p>
 
-          <h1 className="mt-6 text-5xl font-bold leading-tight text-white lg:text-6xl">
+          <h1 className="mt-6 text-4xl font-bold leading-[1.08] text-white lg:text-5xl">
             La mayoría de las pérdidas operacionales
             <br />
             no ocurren donde usted las está buscando.
           </h1>
 
-          <p className="mt-8 max-w-2xl text-xl leading-9 text-slate-300">
+          <p className="mt-8 max-w-xl text-xl leading-9 text-slate-300">
             Analizamos cómo interactúan Producción, Mantenimiento,
             Planeamiento, Compras, Inventarios y Logística para descubrir
             las restricciones que limitan el desempeño de su operación.
@@ -35,7 +35,7 @@ export default function Hero() {
 
             <a
               href="#sp6"
-              className="rounded-xl border border-slate-500 px-8 py-4 font-semibold text-white transition hover:border-cyan-400 hover:text-cyan-300"
+              className="rounded-xl border border-slate-500 px-8 py-4 font-semibold text-white transition hover:border-cyan-400 hover:bg-slate-900 hover:text-cyan-300"
             >
               Conozca el Modelo SP6
             </a>
@@ -92,9 +92,9 @@ export default function Hero() {
 
         <div className="grid grid-cols-2 gap-4">
 
-          <div className="col-span-2 h-72 overflow-hidden rounded-3xl bg-slate-800">
+          <div className="col-span-2 h-80 overflow-hidden rounded-3xl bg-slate-800 shadow-2xl">
             <img
-              src="/images/hero/operations-hero.jpg"
+              src="/images/hero/operations-hero.png"
               alt="Operaciones"
               className="h-full w-full object-cover"
             />
@@ -102,7 +102,7 @@ export default function Hero() {
 
           <div className="h-40 overflow-hidden rounded-2xl bg-slate-800">
             <img
-              src="/images/hero/maintenance.jpg"
+              src="/images/hero/maintenance.png"
               alt="Mantenimiento"
               className="h-full w-full object-cover"
             />
@@ -110,7 +110,7 @@ export default function Hero() {
 
           <div className="h-40 overflow-hidden rounded-2xl bg-slate-800">
             <img
-              src="/images/hero/warehouse.jpg"
+              src="/images/hero/warehouse.png"
               alt="Almacenes"
               className="h-full w-full object-cover"
             />
@@ -118,7 +118,7 @@ export default function Hero() {
 
           <div className="h-40 overflow-hidden rounded-2xl bg-slate-800">
             <img
-              src="/images/hero/planning.jpg"
+              src="/images/hero/planning.png"
               alt="Planeamiento"
               className="h-full w-full object-cover"
             />
@@ -126,7 +126,7 @@ export default function Hero() {
 
           <div className="h-40 overflow-hidden rounded-2xl bg-slate-800">
             <img
-              src="/images/hero/procurement.jpg"
+              src="/images/hero/procurement.png"
               alt="Procurement"
               className="h-full w-full object-cover"
             />

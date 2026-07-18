@@ -1,45 +1,53 @@
 export default function Situations() {
   const situations = [
     {
-      title: "Roturas de stock",
-      text: "Materiales críticos que no llegan cuando la operación los necesita.",
-      icon: "📦",
-    },
+  title: "Roturas de stock",
+  text: "Materiales críticos que no llegan cuando la operación los necesita.",
+  icon: "📦",
+  image: "/images/inventory/stock-break.png",
+},
     {
-      title: "Compras urgentes",
-      text: "La urgencia reemplaza la planificación y aumenta los costos.",
-      icon: "🚨",
-    },
+  title: "Compras urgentes",
+  text: "La urgencia reemplaza la planificación y aumenta los costos.",
+  icon: "🚨",
+  image: "/images/procurement/urgent-purchase.png",
+},
     {
-      title: "Baja disponibilidad",
-      text: "Equipos detenidos por falta de materiales o repuestos.",
-      icon: "⚙️",
-    },
+  title: "Baja disponibilidad",
+  text: "Equipos detenidos por falta de materiales o repuestos.",
+  icon: "⚙️",
+  image: "/images/operations/low-availability.png",
+},
     {
-      title: "Inventarios poco confiables",
-      text: "El sistema indica una realidad distinta a la operación.",
-      icon: "📊",
-    },
-    {
-      title: "Materiales fuera de tiempo",
-      text: "Los recursos llegan cuando la necesidad ya pasó.",
-      icon: "⏱️",
-    },
-    {
-      title: "Producción afectada",
-      text: "La cadena de suministro limita el desempeño operacional.",
-      icon: "🏭",
-    },
-    {
-      title: "ERP sin resultados",
-      text: "La tecnología existe, pero los procesos siguen desconectados.",
-      icon: "💻",
-    },
-    {
-      title: "Áreas desalineadas",
-      text: "Producción, Compras, Inventarios y Mantenimiento trabajan con prioridades distintas.",
-      icon: "🔗",
-    },
+  title: "Inventarios poco confiables",
+  text: "El sistema indica una realidad distinta a la operación.",
+  icon: "📊",
+  image: "/images/inventory/inventory-discrepancy.png",
+},
+  {
+  title: "Materiales fuera de tiempo",
+  text: "Los recursos llegan cuando la necesidad ya pasó.",
+  icon: "⏱️",
+  image: "/images/operations/late-materials.png",
+},
+{
+  title: "Producción afectada",
+  text: "La cadena de suministro limita el desempeño operacional.",
+  icon: "🏭",
+  image: "/images/operations/production-affected.png",
+},
+{
+  title: "ERP sin resultados",
+  text: "La tecnología existe, pero los procesos siguen desconectados.",
+  icon: "💻",
+  image: "/images/operations/erp-no-results.png",
+},
+{
+  title: "Áreas desalineadas",
+  text: "Producción, Compras, Inventarios y Mantenimiento trabajan con prioridades distintas.",
+  icon: "🔗",
+  image: "/images/operations/misaligned-areas.png",
+},  
   ];
 
   return (
@@ -71,24 +79,34 @@ export default function Situations() {
 
           {situations.map((item) => (
 
-            <article
-              key={item.title}
-              className="group rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-cyan-300 hover:shadow-2xl"
-            >
+          <article
+  key={item.title}
+        className="group flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:border-cyan-300 hover:shadow-2xl"  
+>
+  <div className="flex-1 p-8">
+    <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-cyan-50 text-3xl transition group-hover:bg-cyan-500 group-hover:text-white">
+      {item.icon}
+    </div>
 
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-cyan-50 text-3xl transition group-hover:bg-cyan-500 group-hover:text-white">
-                {item.icon}
-              </div>
+    <h3 className="mt-6 text-2xl font-bold text-slate-900">
+      {item.title}
+    </h3>
 
-              <h3 className="mt-8 text-2xl font-bold text-slate-900">
-                {item.title}
-              </h3>
+    <p className="mt-4 leading-7 text-slate-600">
+      {item.text}
+    </p>
+  </div>
 
-              <p className="mt-5 leading-8 text-slate-600">
-                {item.text}
-              </p>
-
-            </article>
+  {item.image && (
+    <div className="h-40 overflow-hidden">
+      <img
+        src={item.image}
+        alt={item.title}
+        className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+      />
+    </div>
+  )}
+</article>  
 
           ))}
 
