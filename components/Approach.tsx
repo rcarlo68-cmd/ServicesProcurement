@@ -132,7 +132,7 @@ export default function Approach() {
             No fortalecemos únicamente la cadena de suministro.
           </p>
 
-          <h3 className="mt-5 text-5xl font-bold leading-tight text-white">
+          <h3 className="mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
             Fortalecemos el desempeño de la operación.
           </h3>
 
