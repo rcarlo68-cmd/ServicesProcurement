@@ -5,63 +5,61 @@ import Label from "./sp6/Label";
 
 export default function SP6Compass() {
   return (
-    <div className="flex justify-center">
-
+    <div className="flex justify-center py-8">
       <svg
-        viewBox="0 0 700 700"
-        className="w-full max-w-[640px]"
+        viewBox="0 0 700 740"
+        className="w-full max-w-[760px]"
       >
-
         <Connection />
 
         <Center />
+
         <Hexagon
           x={350}
-          y={85}
+          y={115}
           title="Procurement"
         />
 
         <Hexagon
           x={550}
-          y={210}
+          y={230}
           title="SP"
           subtitle="Knowledge"
         />
 
         <Hexagon
           x={550}
-          y={490}
+          y={510}
           title="Auditoría"
           subtitle="Logística"
         />
 
         <Hexagon
           x={350}
-          y={615}
+          y={625}
           title="Talento"
-        />      
+        />
+
         <Hexagon
           x={150}
-          y={490}
+          y={510}
           title="Operaciones"
           subtitle="y Distribución"
         />
 
         <Hexagon
           x={150}
-          y={210}
+          y={230}
           title="Almacenes"
           subtitle="e Inventarios"
         />
 
         <Label
           x={350}
-          y={28}
+          y={40}
           text="MODELO SP6"
         />
-
       </svg>
-
     </div>
   );
-}          
+}

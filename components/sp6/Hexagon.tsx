@@ -12,28 +12,28 @@ export default function Hexagon({
   subtitle,
 }: HexagonProps) {
   return (
-    <g className="cursor-pointer">
+    <g className="cursor-pointer transition-all duration-300">
 
       <polygon
         points={`
-          ${x-40},${y}
-          ${x-28},${y-38}
-          ${x+28},${y-38}
-          ${x+55},${y}
-          ${x+28},${y+38}
-          ${x-28},${y+38}
+          ${x - 48},${y}
+          ${x - 32},${y - 44}
+          ${x + 32},${y - 44}
+          ${x + 48},${y}
+          ${x + 32},${y + 44}
+          ${x - 32},${y + 44}
         `}
         fill="white"
-        stroke="#0F172A"
-        strokeWidth="2.5"
+        stroke="#0891B2"
+        strokeWidth="3"
       />
 
       <text
         x={x}
-        y={subtitle ? y - 4 : y + 5}
+        y={subtitle ? y - 6 : y + 6}
         textAnchor="middle"
-        fontSize="15"
-        fontWeight="600"
+        fontSize="17"
+        fontWeight="700"
         fill="#0F172A"
       >
         {title}
@@ -42,10 +42,11 @@ export default function Hexagon({
       {subtitle && (
         <text
           x={x}
-          y={y + 18}
+          y={y + 20}
           textAnchor="middle"
-          fontSize="13"
-          fill="#475569"
+          fontSize="14"
+          fontWeight="500"
+          fill="#334155"
         >
           {subtitle}
         </text>

@@ -3,30 +3,31 @@ export default function Center() {
     <g>
       <circle
         cx="350"
-        cy="350"
-        r="88"
+        cy="370"
+        r="96"
         fill="white"
-        stroke="#0F172A"
-        strokeWidth="5"
+        stroke="#0891B2"
+        strokeWidth="7"
       />
 
       <text
         x="350"
-        y="336"
+        y="356"
         textAnchor="middle"
-        fontSize="40"
+        fontSize="46"
         fontWeight="700"
-        fill="#0F172A"
+        fill="#0891B2"
       >
         SP
       </text>
 
       <text
         x="350"
-        y="372"
+        y="395"
         textAnchor="middle"
-        fontSize="12"
-        fill="#64748B"
+        fontSize="14"
+        fontWeight="500"
+        fill="#334155"
       >
         Services Procurement
       </text>
