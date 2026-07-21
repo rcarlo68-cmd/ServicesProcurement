@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Footer from "../components/Footer";
 
@@ -100,6 +101,31 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Services Procurement",
+  url: siteUrl,
+  logo: `${siteUrl}/images/logo/services-procurement-logo.png`,
+  description:
+    "Consultoría especializada en Supply Chain, Procurement, Logística e Inventarios.",
+  founder: {
+    "@type": "Person",
+    name: "Ricardo Cabrera",
+  },
+  sameAs: [
+    "https://www.linkedin.com/company/services-procurement/",
+  ],
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Services Procurement",
+  url: siteUrl,
+  inLanguage: "es-PE",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -115,6 +141,22 @@ export default function RootLayout({
         translate="no"
         className="min-h-full flex flex-col"
       >
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
+
         <main className="flex-1">
           {children}
         </main>
