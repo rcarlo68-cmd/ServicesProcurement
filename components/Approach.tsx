@@ -2,7 +2,7 @@
 ----------------------------------------------------------
 Services Procurement Website
 Component: Approach
-Version: 1.0
+Version: 1.2
 Status: APPROVED
 ----------------------------------------------------------
 */
@@ -14,7 +14,6 @@ const cards = [
     phrase: "«No puedo cumplir el plan... siguen faltando materiales.»",
     description:
       "Sabemos que esa conversación normalmente comenzó semanas antes de que la operación se detuviera. Nuestro trabajo consiste en identificar ese origen y evitar que vuelva a repetirse.",
-    link: "/operations",
   },
   {
     title: "Mantenimiento",
@@ -22,7 +21,6 @@ const cards = [
     phrase: "«El equipo sigue detenido. Falta un repuesto.»",
     description:
       "Cada hora de indisponibilidad representa producción que no se recupera. Ayudamos a anticiparnos al problema fortaleciendo la cadena de suministro.",
-    link: "/operations",
   },
   {
     title: "Cadena de suministro",
@@ -30,7 +28,6 @@ const cards = [
     phrase: "«El sistema dice que sí hay stock...»",
     description:
       "Convertimos la información en decisiones confiables para que la operación no tenga que trabajar por intuición.",
-    link: "/warehousing",
   },
 ];
 
@@ -38,9 +35,9 @@ export default function Approach() {
   return (
     <section
       id="approach"
-      className="bg-white py-24"
+      className="bg-white py-16 md:py-24"
     >
-      <div className="mx-auto max-w-7xl px-8">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
         {/* Encabezado */}
 
@@ -50,18 +47,19 @@ export default function Approach() {
             Nuestro enfoque
           </p>
 
-          <h2 className="mt-5 text-5xl font-bold leading-tight text-slate-900">
+          <h2 className="mt-5 text-4xl font-bold leading-tight text-slate-900 md:text-5xl">
             Entendemos la operación porque hemos estado allí.
           </h2>
 
-          <p className="mx-auto mt-8 max-w-4xl text-xl leading-9 text-slate-600">
+          <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-slate-600 md:text-xl md:leading-9">
             Durante años participamos en reuniones donde Producción,
             Mantenimiento y Cadena de Suministro perseguían el mismo objetivo,
             pero hablaban desde realidades diferentes.
           </p>
 
-          <p className="mt-5 text-xl font-semibold text-cyan-700">
-            Nuestro trabajo comienza donde normalmente aparecen los problemas de la operación.
+          <p className="mt-5 text-lg font-semibold text-cyan-700 md:text-xl">
+            Nuestro trabajo comienza donde normalmente aparecen los problemas de
+            la operación.
           </p>
 
         </div>
@@ -87,30 +85,19 @@ export default function Approach() {
 
               </div>
 
-              <div className="flex h-[330px] flex-col p-8">
+              <div className="flex flex-col p-8 lg:min-h-[330px]">
 
-                <h3 className="text-3xl font-bold text-slate-900">
+                <h3 className="text-2xl font-bold text-slate-900 lg:text-3xl">
                   {card.title}
                 </h3>
 
-                <p className="mt-5 text-xl italic font-medium leading-8 text-cyan-700">
+                <p className="mt-5 text-lg italic font-medium leading-8 text-cyan-700 md:text-xl">
                   {card.phrase}
                 </p>
 
-                <p className="mt-6 flex-1 leading-8 text-slate-600">
+                <p className="mt-6 leading-8 text-slate-600 flex-1">
                   {card.description}
                 </p>
-
-                <div className="mt-8 border-t border-slate-200 pt-5">
-
-                  <a
-                    href={card.link}
-                    className="font-semibold text-cyan-700 transition hover:text-slate-900"
-                  >
-                    Conozca más →
-                  </a>
-
-                </div>
 
               </div>
 
@@ -124,15 +111,15 @@ export default function Approach() {
 
       {/* Franja inferior */}
 
-      <div className="mt-24 bg-slate-900">
+      <div className="mt-20 bg-slate-900 md:mt-24">
 
-        <div className="mx-auto max-w-7xl px-8 py-20 text-center">
+        <div className="mx-auto max-w-7xl px-6 py-16 text-center lg:px-8 md:py-20">
 
-          <p className="text-2xl text-slate-300">
+          <p className="text-xl text-slate-300 md:text-2xl">
             No fortalecemos únicamente la cadena de suministro.
           </p>
 
-          <h3 className="mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
+          <h3 className="mt-5 text-3xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">
             Fortalecemos el desempeño de la operación.
           </h3>
 

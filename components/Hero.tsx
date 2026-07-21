@@ -1,7 +1,8 @@
+import { FaWhatsapp } from "react-icons/fa";
+
 export default function Hero() {
   return (
     <section className="bg-slate-950">
-
       <div className="mx-auto grid max-w-7xl items-center gap-20 px-8 py-16 lg:grid-cols-2">
 
         {/* TEXTO */}
@@ -27,10 +28,13 @@ export default function Hero() {
           <div className="mt-12 flex flex-wrap gap-4">
 
             <a
-              href="#contacto"
-              className="rounded-xl bg-cyan-500 px-8 py-4 font-semibold text-slate-900 transition hover:bg-cyan-400"
+              href="https://wa.me/51953449850?text=Hola%2C%20Services%20Procurement.%0A%0AQuisiera%20conversar%20sobre%20los%20desaf%C3%ADos%20log%C3%ADsticos%20de%20nuestra%20organizaci%C3%B3n%20y%20conocer%20c%C3%B3mo%20sus%20servicios%20podr%C3%ADan%20ayudarnos%20a%20mejorar%20nuestros%20procesos.%0A%0AQuedo%20atento%20a%20su%20respuesta."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 rounded-xl bg-green-600 px-8 py-4 font-semibold text-white transition-all duration-300 hover:bg-green-700 hover:shadow-xl"
             >
-              Hablemos
+              <FaWhatsapp size={24} />
+              Hablemos por WhatsApp
             </a>
 
             <a
@@ -135,7 +139,6 @@ export default function Hero() {
         </div>
 
       </div>
-
     </section>
   );
 }
