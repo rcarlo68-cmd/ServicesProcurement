@@ -11,9 +11,9 @@ export default function Footer() {
   return (
     <footer
       id="contacto"
-      className="mt-20 border-t border-slate-800 bg-slate-950 text-white"
+      className="mt-16 border-t border-slate-800 bg-slate-950 text-white lg:mt-20"
     >
-      <div className="mx-auto grid max-w-7xl gap-14 px-6 py-16 lg:grid-cols-4 lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-12 px-5 py-14 sm:px-6 sm:py-16 lg:grid-cols-4 lg:gap-14 lg:px-8">
         {/* Empresa */}
 
         <div>
@@ -22,11 +22,11 @@ export default function Footer() {
             alt="Services Procurement"
             width={220}
             height={70}
-            className="h-auto w-44"
+            className="h-auto w-40 sm:w-44"
             priority
           />
 
-          <p className="mt-6 leading-8 text-slate-300">
+          <p className="mt-6 text-base leading-8 text-slate-300">
             Ayudamos a las organizaciones a mejorar el desempeño de su cadena
             de suministro mediante experiencia operativa, conocimiento aplicado
             e inteligencia artificial.
@@ -64,7 +64,7 @@ export default function Footer() {
 
           <ul className="mt-6 space-y-4 text-slate-300">
             <li>Strategic Procurement</li>
-            <li>Warehousing & Inventory</li>
+            <li>Warehousing &amp; Inventory</li>
             <li>Supply Chain Operations</li>
             <li>Logistics Audit</li>
             <li>Operational Excellence</li>
@@ -113,27 +113,26 @@ export default function Footer() {
             ¿Listo para conversar?
           </h4>
 
-          <p className="mt-6 leading-8 text-slate-300">
-            Cada organización enfrenta desafíos distintos.
-            Conversemos sobre su operación y exploremos oportunidades para
-            mejorar el desempeño de su cadena de suministro.
+          <p className="mt-6 text-base leading-8 text-slate-300">
+            Cada organización enfrenta desafíos distintos. Conversemos sobre su
+            operación y exploremos oportunidades para mejorar el desempeño de
+            su cadena de suministro.
           </p>
 
           <div className="mt-8 space-y-4 text-slate-300">
-
             <a
               href="mailto:contacto@servicesprocurementpe.com"
-              className="flex items-center gap-3 transition hover:text-cyan-400"
+              className="flex items-start gap-3 break-all transition hover:text-cyan-400"
             >
-              <FaEnvelope />
+              <FaEnvelope className="mt-1 shrink-0" />
               contacto@servicesprocurementpe.com
             </a>
 
             <a
               href="mailto:rcabrera@servicesprocurementpe.com"
-              className="flex items-center gap-3 transition hover:text-cyan-400"
+              className="flex items-start gap-3 break-all transition hover:text-cyan-400"
             >
-              <FaEnvelope />
+              <FaEnvelope className="mt-1 shrink-0" />
               rcabrera@servicesprocurementpe.com
             </a>
 
@@ -141,12 +140,12 @@ export default function Footer() {
               href="tel:+51953449850"
               className="flex items-center gap-3 transition hover:text-cyan-400"
             >
-              <FaPhoneAlt />
+              <FaPhoneAlt className="shrink-0" />
               +51 953 449 850
             </a>
 
             <div className="flex items-center gap-3">
-              <FaMapMarkerAlt />
+              <FaMapMarkerAlt className="shrink-0" />
               Lima, Perú
             </div>
           </div>
@@ -155,7 +154,7 @@ export default function Footer() {
             href="https://wa.me/51953449850?text=Hola%2C%20Services%20Procurement.%0A%0AQuisiera%20conversar%20sobre%20los%20desaf%C3%ADos%20log%C3%ADsticos%20de%20nuestra%20organizaci%C3%B3n%20y%20conocer%20c%C3%B3mo%20sus%20servicios%20podr%C3%ADan%20ayudarnos%20a%20mejorar%20nuestros%20procesos.%0A%0AQuedo%20atento%20a%20su%20respuesta."
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-10 inline-flex items-center gap-3 rounded-xl bg-green-600 px-8 py-4 font-semibold text-white transition-all hover:bg-green-700 hover:shadow-xl"
+            className="mt-10 inline-flex w-full items-center justify-center gap-3 rounded-xl bg-green-600 px-8 py-4 text-center font-semibold text-white transition-all hover:bg-green-700 hover:shadow-xl sm:w-auto"
           >
             <FaWhatsapp size={22} />
             Hablemos por WhatsApp
@@ -164,7 +163,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-slate-800">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-6 text-sm text-slate-500 md:flex-row lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 py-6 text-center text-sm text-slate-500 sm:px-6 md:flex-row md:text-left lg:px-8">
           <p>
             © 2026 Services Procurement. Todos los derechos reservados.
           </p>
