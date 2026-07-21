@@ -13,27 +13,91 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://www.servicesprocurementpe.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+
   title: {
-    default: "Services Procurement",
+    default:
+      "Services Procurement | Consultoría en Supply Chain, Procurement y Logística",
     template: "%s | Services Procurement",
   },
 
   description:
-    "Services Procurement ayuda a organizaciones a identificar y resolver las situaciones que afectan el desempeño de su cadena de suministro.",
+    "Consultoría especializada en Supply Chain, Procurement, Logística, Inventarios y Transformación Operacional. Más de 30 años de experiencia en minería e industria.",
 
   keywords: [
     "Services Procurement",
-    "Procurement",
-    "Cadena de Suministro",
     "Supply Chain",
+    "Procurement",
     "Logística",
-    "Operaciones",
-    "Auditoría Logística",
-    "Strategic Sourcing",
+    "Cadena de Suministro",
+    "Consultoría",
     "Inventarios",
+    "Almacenes",
+    "Strategic Sourcing",
+    "Auditoría Logística",
     "Minería",
+    "Operational Excellence",
+    "Supply Chain Consulting",
+    "Perú",
   ],
+
+  authors: [
+    {
+      name: "Ricardo Cabrera",
+    },
+  ],
+
+  creator: "Ricardo Cabrera",
+
+  publisher: "Services Procurement",
+
+  category: "Business",
+
+  alternates: {
+    canonical: siteUrl,
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "es_PE",
+    url: siteUrl,
+    siteName: "Services Procurement",
+
+    title:
+      "Services Procurement | Consultoría en Supply Chain, Procurement y Logística",
+
+    description:
+      "Transformamos experiencia operativa en mejores decisiones para la cadena de suministro.",
+
+    images: [
+      {
+        url: "/images/og/services-procurement-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Services Procurement",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title:
+      "Services Procurement | Consultoría en Supply Chain, Procurement y Logística",
+
+    description:
+      "Transformamos experiencia operativa en mejores decisiones para la cadena de suministro.",
+
+    images: ["/images/og/services-procurement-og.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
