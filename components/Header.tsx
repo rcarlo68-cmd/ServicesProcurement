@@ -1,67 +1,96 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
+    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-md">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
         {/* Logo */}
 
-        <a href="/" className="flex shrink-0 items-center">
+        <Link
+          href="/"
+          className="flex items-center transition-opacity hover:opacity-90"
+        >
           <Image
             src="/images/logo/services-procurement-logo.png"
             alt="Services Procurement"
             width={220}
             height={64}
             priority
-            className="h-12 w-auto sm:h-14 lg:h-16"
+            className="h-12 w-auto lg:h-14"
           />
-        </a>
+        </Link>
 
-        {/* Menú */}
+        {/* Navegación */}
 
-        <nav className="hidden items-center gap-8 text-sm font-semibold lg:flex">
-          <a
-            href="/operations"
-            className="transition hover:text-blue-700"
-          >
-            Operations
-          </a>
+        <nav className="hidden items-center lg:flex">
+          <ul className="flex items-center gap-10 text-[15px] font-medium text-slate-700">
+            <li>
+              <Link
+                href="/operations"
+                className="transition-colors duration-200 hover:text-slate-900"
+              >
+                Operations
+              </Link>
+            </li>
 
-          <a
-            href="/procurement"
-            className="transition hover:text-blue-700"
-          >
-            Procurement
-          </a>
+            <li>
+              <Link
+                href="/procurement"
+                className="transition-colors duration-200 hover:text-slate-900"
+              >
+                Procurement
+              </Link>
+            </li>
 
-          <a
-            href="/warehousing"
-            className="transition hover:text-blue-700"
-          >
-            Warehousing
-          </a>
+            <li>
+              <Link
+                href="/warehousing"
+                className="transition-colors duration-200 hover:text-slate-900"
+              >
+                Warehousing
+              </Link>
+            </li>
 
-          <a
-            href="/knowledge"
-            className="transition hover:text-blue-700"
-          >
-            SP Knowledge
-          </a>
+            <li>
+              <Link
+                href="/knowledge"
+                className="transition-colors duration-200 hover:text-slate-900"
+              >
+                SP Knowledge
+              </Link>
+            </li>
 
-          <a
-            href="/book"
-            className="transition hover:text-blue-700"
-          >
-            Libro
-          </a>
+            <li>
+              <Link
+                href="/sp6"
+                className="font-semibold text-slate-900 transition-colors duration-200 hover:text-blue-700"
+              >
+                Modelo SP6
+              </Link>
+            </li>
 
-          <a
+            <li>
+              <Link
+                href="/book"
+                className="transition-colors duration-200 hover:text-slate-900"
+              >
+                Libro
+              </Link>
+            </li>
+          </ul>
+        </nav>
+
+        {/* CTA */}
+
+        <div className="hidden lg:block">
+          <Link
             href="/contact"
-            className="rounded-xl bg-slate-900 px-5 py-3 text-white transition hover:bg-slate-700"
+            className="rounded-lg bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-slate-800"
           >
             Contacto
-          </a>
-        </nav>
+          </Link>
+        </div>
       </div>
     </header>
   );

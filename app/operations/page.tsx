@@ -1,12 +1,5 @@
-import Header from "../../components/Header";
 import OperationsPage from "../../components/operations/OperationsPage";
 
 export default function Page() {
-  return (
-    <>
-      <Header />
-
-      <OperationsPage />
-    </>
-  );
+  return <OperationsPage />;
 }

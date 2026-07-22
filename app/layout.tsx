@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-import Footer from "../components/Footer";
-import GoogleAnalytics from "../components/GoogleAnalytics";
-import FloatingContactButton from "../components/FloatingContactButton";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import FloatingContactButton from "@/components/FloatingContactButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -116,9 +117,11 @@ export default function RootLayout({
     >
       <body
         translate="no"
-        className="min-h-full flex flex-col"
+        className="flex min-h-screen flex-col bg-white text-slate-900"
       >
         <GoogleAnalytics />
+
+        <Header />
 
         <main className="flex-1">
           {children}

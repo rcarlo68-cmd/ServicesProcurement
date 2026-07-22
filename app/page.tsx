@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Situations from "../components/Situations";
 import Approach from "../components/Approach";
@@ -8,23 +7,18 @@ import Book from "../components/Book";
 
 export default function Home() {
   return (
-    <>
-      <Header />
+    <main>
+      <Hero />
 
-      <main>
-        <Hero />
+      <Situations />
 
-        <Situations />
+      <Approach />
 
-        <Approach />
+      <WhySP />
 
-        <WhySP />
+      <SPKnowledge />
 
-        <SPKnowledge />
-
-        
-        <Book />
-      </main>
-    </>
+      <Book />
+    </main>
   );
 }
