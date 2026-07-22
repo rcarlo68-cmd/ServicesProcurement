@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Footer from "../components/Footer";
 import GoogleAnalytics from "../components/GoogleAnalytics";
+import FloatingContactButton from "../components/FloatingContactButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -122,6 +123,8 @@ export default function RootLayout({
         <main className="flex-1">
           {children}
         </main>
+
+        <FloatingContactButton />
 
         <Footer />
       </body>
