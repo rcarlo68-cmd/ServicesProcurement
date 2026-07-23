@@ -8,6 +8,7 @@ const pillars = [
     x: 350,
     y: 90,
     title: "Procurement",
+    subtitle: "",
   },
   {
     x: 565,
@@ -25,6 +26,7 @@ const pillars = [
     x: 350,
     y: 650,
     title: "Talento",
+    subtitle: "",
   },
   {
     x: 135,
