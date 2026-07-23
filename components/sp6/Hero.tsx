@@ -1,96 +1,93 @@
-import Link from "next/link";
+"use client";
 
-import { hero } from "@/data/sp6";
+import Image from "next/image";
+
+const items = [
+  {
+    label: "Procurement",
+    target: "procurement",
+  },
+  {
+    label: "SP Knowledge",
+    target: "sp-knowledge",
+  },
+  {
+    label: "Auditoría Logística",
+    target: "auditoria-logistica",
+  },
+  {
+    label: "Talento",
+    target: "desarrollo-talento",
+  },
+  {
+    label: "Almacenes e Inventarios",
+    target: "almacenes-inventarios",
+  },
+  {
+    label: "Operaciones y Distribución",
+    target: "operaciones-distribucion",
+  },
+];
 
 export default function Hero() {
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
-    <section className="relative overflow-hidden border-b border-slate-200 bg-white">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(15,23,42,0.03),_transparent_45%)]" />
+    <section className="relative overflow-hidden bg-black">
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(37,99,235,0.10),transparent_45%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(14,165,233,0.05),transparent_55%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,#020617_0%,#030712_45%,#000000_100%)]" />
+      </div>
 
-      <div className="relative mx-auto grid max-w-7xl gap-14 px-6 py-16 lg:grid-cols-[1.4fr_420px] lg:items-center lg:px-8 lg:py-20">
-        <div>
-          <span className="inline-flex items-center rounded-full border border-slate-300 bg-slate-50 px-4 py-1 text-xs font-semibold uppercase tracking-[0.30em] text-slate-600">
-            METODOLOGÍA PROPIETARIA
-          </span>
+      <div className="relative mx-auto flex w-full max-w-7xl flex-col px-6 pb-8 pt-10 lg:px-10 lg:pb-10 lg:pt-12">
+        <div className="mx-auto max-w-4xl text-center">
+          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.45em] text-sky-400">
+            Services Procurement
+          </p>
 
-          <h1 className="mt-6 max-w-4xl text-5xl font-bold leading-tight tracking-tight text-slate-900 lg:text-6xl">
-            {hero.title}
+          <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            MODELO SP6
           </h1>
 
-          <p className="mt-6 max-w-3xl text-2xl font-light leading-relaxed text-slate-700">
-            {hero.subtitle}
+          <p className="mx-auto mt-8 max-w-3xl text-base leading-8 text-slate-400 sm:text-lg">
+            Integramos seis capacidades estratégicas para transformar la cadena
+            de suministro en una fuente sostenible de ventaja competitiva.
           </p>
+        </div>
 
-          <div className="mt-10 h-px w-28 bg-slate-300" />
-
-          <p className="mt-10 max-w-3xl text-lg leading-8 text-slate-600">
-            {hero.description}
-          </p>
-
-          <div className="mt-12 flex flex-col gap-4 sm:flex-row">
-            <Link
-              href="#methodology"
-              className="inline-flex items-center justify-center rounded-lg bg-slate-900 px-7 py-3.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-slate-800"
-            >
-              Explorar la metodología
-            </Link>
-
-            <Link
-              href="#cta"
-              className="inline-flex items-center justify-center rounded-lg border border-slate-300 px-7 py-3.5 text-sm font-semibold text-slate-700 transition-all duration-200 hover:bg-slate-50"
-            >
-              Solicitar una reunión
-            </Link>
+        <div className="mt-8 flex justify-center lg:mt-10">
+          <div className="w-full max-w-6xl transition-all duration-500 ease-out hover:scale-[1.02] hover:brightness-110 hover:saturate-110">
+            <Image
+              src="/images/sp6/sp-framework-dark.png"
+              alt="Modelo SP6"
+              width={1536}
+              height={1024}
+              priority
+              className="h-auto w-full select-none object-contain"
+            />
           </div>
         </div>
 
-        <aside className="rounded-2xl border border-slate-200 bg-slate-50 p-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.30em] text-slate-500">
-            MODELO SP6
-          </p>
-
-          <h2 className="mt-3 text-2xl font-semibold text-slate-900">
-            Una metodología para fortalecer la cadena de suministro.
-          </h2>
-
-          <div className="mt-10 space-y-8">
-            <div className="border-l-2 border-slate-300 pl-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.20em] text-slate-500">
-                Enfoque
-              </p>
-
-              <p className="mt-2 leading-7 text-slate-700">
-                Comprender la cadena de suministro como un sistema integrado,
-                donde cada capacidad influye en el desempeño global.
-              </p>
-            </div>
-
-            <div className="border-l-2 border-slate-300 pl-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.20em] text-slate-500">
-                Fundamentado en
-              </p>
-
-              <ul className="mt-3 space-y-2 text-slate-700">
-                <li>Experiencia operacional.</li>
-                <li>Conocimiento aplicado.</li>
-                <li>Análisis técnico.</li>
-                <li>Mejora continua.</li>
-              </ul>
-            </div>
-
-            <div className="border-l-2 border-slate-300 pl-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.20em] text-slate-500">
-                Propósito
-              </p>
-
-              <p className="mt-2 leading-7 text-slate-700">
-                Desarrollar organizaciones más resilientes, eficientes y
-                preparadas para enfrentar los desafíos de una cadena de
-                suministro moderna.
-              </p>
-            </div>
+        <div className="mx-auto mt-6 w-full max-w-5xl rounded-2xl border border-slate-800 bg-white/5 p-2 backdrop-blur-md lg:mt-8">
+          <div className="flex flex-col gap-2 md:flex-row">
+            {items.map((item) => (
+              <button
+                key={item.target}
+                type="button"
+                onClick={() => scrollToSection(item.target)}
+                className="flex h-12 flex-1 items-center justify-center rounded-xl border border-transparent px-4 text-[15px] font-semibold text-slate-300 transition-all duration-300 hover:border-sky-500/50 hover:bg-sky-500/10 hover:text-white"
+              >
+                {item.label}
+              </button>
+            ))}
           </div>
-        </aside>
+        </div>
       </div>
     </section>
   );

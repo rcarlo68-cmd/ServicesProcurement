@@ -52,10 +52,7 @@ export default function Industries() {
                 </h3>
 
                 <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600">
-                  El Modelo SP6 adapta sus principios, metodología y herramientas
-                  a las características operativas, regulatorias y estratégicas
-                  de este sector, preservando un enfoque integral de la cadena
-                  de suministro.
+                  {industry.description}
                 </p>
               </div>
             </article>

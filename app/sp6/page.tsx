@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
 import Benefits from "@/components/sp6/Benefits";
-import Compass from "@/components/sp6/Compass";
 import CTA from "@/components/sp6/CTA";
 import Hero from "@/components/sp6/Hero";
 import Industries from "@/components/sp6/Industries";
@@ -9,6 +8,7 @@ import Introduction from "@/components/sp6/Introduction";
 import Methodology from "@/components/sp6/Methodology";
 import Origin from "@/components/sp6/Origin";
 import Pillars from "@/components/sp6/Pillars";
+import Sticky from "@/components/sp6/Sticky";
 
 export const metadata: Metadata = {
   title: "Modelo SP6 | Services Procurement",
@@ -21,19 +21,19 @@ export default function SP6Page() {
     <main className="min-h-screen bg-white">
       <Hero />
 
-      <Introduction />
-
-      <Origin />
-
-      <Compass />
+      <Sticky />
 
       <Pillars />
+
+      <Introduction />
 
       <Methodology />
 
       <Benefits />
 
       <Industries />
+
+      <Origin />
 
       <CTA />
     </main>

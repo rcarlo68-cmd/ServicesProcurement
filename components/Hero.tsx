@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function Hero() {
@@ -36,12 +37,12 @@ export default function Hero() {
               Hablemos por WhatsApp
             </a>
 
-            <a
-              href="#sp6"
-              className="inline-flex items-center justify-center rounded-xl border border-slate-500 px-8 py-4 text-center font-semibold text-white transition hover:border-cyan-400 hover:bg-slate-900 hover:text-cyan-300"
+            <Link
+              href="/sp6"
+              className="inline-flex items-center justify-center rounded-xl border border-slate-500 px-8 py-4 text-center font-semibold text-white transition-all duration-300 hover:border-cyan-400 hover:bg-slate-900 hover:text-cyan-300"
             >
               Conozca el Modelo SP6
-            </a>
+            </Link>
           </div>
 
           <div className="mt-14 grid grid-cols-2 gap-8 sm:mt-16 lg:grid-cols-4">

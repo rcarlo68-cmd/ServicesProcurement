@@ -53,10 +53,7 @@ export default function Benefits() {
                 </h3>
 
                 <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600">
-                  Resultado estratégico del Modelo SP6 para fortalecer la
-                  integración, mejorar la capacidad de gestión y desarrollar una
-                  cadena de suministro más eficiente, resiliente y orientada a
-                  resultados.
+                  {benefit.description}
                 </p>
               </div>
             </article>

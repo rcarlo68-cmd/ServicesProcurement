@@ -36,9 +36,10 @@ export default function Pillars() {
         <div className="mt-20 grid gap-8 lg:grid-cols-2">
           {pillars.map((pillar) => (
             <article
-              key={pillar.id}
-              className="rounded-2xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:border-slate-300"
-            >
+  id={pillar.id}
+  key={pillar.id}
+  className="rounded-2xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:border-slate-300"
+>
               <h3 className="text-2xl font-semibold text-slate-900">
                 {pillar.title}
               </h3>

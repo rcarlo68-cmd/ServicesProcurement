@@ -11,21 +11,33 @@ export const benefitsIntroduction: string[] = [
 export const benefits: SP6Benefit[] = [
   {
     title: "Mayor integración entre los procesos.",
+    description:
+      "Promueve la coordinación entre compras, almacenes, operaciones, logística, mantenimiento y las demás áreas involucradas en la cadena de suministro, favoreciendo una gestión alineada con los objetivos estratégicos de la organización.",
   },
   {
     title: "Decisiones basadas en información confiable.",
+    description:
+      "Facilita el uso de datos consistentes y análisis estructurados para respaldar la toma de decisiones, reduciendo la incertidumbre y fortaleciendo la capacidad de respuesta frente a los desafíos operativos.",
   },
   {
     title: "Identificación temprana de riesgos y oportunidades.",
+    description:
+      "Permite detectar oportunamente debilidades, brechas de desempeño y oportunidades de mejora antes de que se conviertan en problemas que afecten la continuidad de las operaciones.",
   },
   {
     title: "Optimización de los recursos disponibles.",
+    description:
+      "Contribuye a utilizar de manera más eficiente los recursos humanos, materiales, tecnológicos y financieros, orientando los esfuerzos hacia aquellas iniciativas que generan mayor valor para la organización.",
   },
   {
     title: "Desarrollo de capacidades organizacionales.",
+    description:
+      "Fortalece las competencias del talento humano, impulsa el aprendizaje continuo y favorece la adopción de mejores prácticas que permanecen más allá de una intervención puntual.",
   },
   {
     title: "Consolidación de una cultura de mejora continua.",
+    description:
+      "Fomenta una visión de mejora permanente basada en el análisis, la colaboración y la adaptación al cambio, convirtiendo la cadena de suministro en un proceso de evolución constante.",
   },
 ];
 

@@ -24,10 +24,12 @@ export interface SP6MethodologyStep {
 
 export interface SP6Benefit {
   title: string;
+  description: string;
 }
 
 export interface SP6Industry {
   title: string;
+  description: string;
 }
 
 export interface SP6CTA {
