@@ -3,6 +3,7 @@ import {
   Container,
   Head,
   Html,
+  Img,
   Preview,
   Section,
   Text,
@@ -47,6 +48,7 @@ export default function Layout({
             overflow: "hidden",
           }}
         >
+          {/* ENCABEZADO */}
           <Section
             style={{
               padding: "42px",
@@ -54,18 +56,17 @@ export default function Layout({
               borderBottom: "1px solid #1F2937",
             }}
           >
-            <Text
+            <Img
+              src="https://www.servicesprocurementpe.com/images/logo/logo-white.png"
+              alt="Services Procurement"
+              height="40"
               style={{
-                color: "#D4AF37",
-                letterSpacing: "4px",
-                fontSize: "12px",
-                fontWeight: 700,
-                textTransform: "uppercase",
-                margin: 0,
+                display: "block",
+                width: "auto",
+                height: "40px",
+                margin: "0 auto",
               }}
-            >
-              SERVICES PROCUREMENT
-            </Text>
+            />
 
             <Text
               style={{
@@ -90,6 +91,7 @@ export default function Layout({
             </Text>
           </Section>
 
+          {/* CONTENIDO */}
           <Section
             style={{
               padding: "42px",
@@ -98,6 +100,7 @@ export default function Layout({
             {children}
           </Section>
 
+          {/* FOOTER */}
           <Section
             style={{
               borderTop: "1px solid #1F2937",
@@ -123,3 +126,4 @@ export default function Layout({
     </Html>
   );
 }
+

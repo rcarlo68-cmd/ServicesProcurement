@@ -59,13 +59,6 @@ export default function Hero() {
           <div className="mt-12 flex flex-wrap gap-5">
             <Link
   href="#contenido"
-  onClick={(e) => {
-    e.preventDefault();
-    document.getElementById("contenido")?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }}
   className="
     inline-flex
     h-14

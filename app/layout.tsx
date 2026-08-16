@@ -9,52 +9,73 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://servicesprocurementpe.com"),
+  metadataBase: new URL("https://www.servicesprocurementpe.com"),
+
   title: {
-    default: "Services Procurement",
+    default: "Services Procurement | Supply Chain, Procurement y Logística",
     template: "%s | Services Procurement",
   },
+
   description:
-    "Consultoría estratégica para fortalecer la cadena de suministro mediante metodologías, inteligencia operativa y desarrollo del talento.",
+    "Consultoría especializada en procurement, logística y cadena de suministro. Transformamos conocimiento operativo en mejores decisiones y ventaja competitiva.",
+
   applicationName: "Services Procurement",
+
   keywords: [
     "Supply Chain",
     "Procurement",
     "Logística",
-    "Consultoría",
+    "Cadena de suministro",
+    "Consultoría logística",
+    "Consultoría Supply Chain",
     "Auditoría Logística",
     "Almacenes",
     "Inventarios",
-    "Coaching",
+    "Desarrollo del talento",
+    "Coaching Logístico",
     "SP6",
   ],
+
   authors: [
     {
       name: "Services Procurement",
     },
   ],
+
   creator: "Services Procurement",
   publisher: "Services Procurement",
+
   robots: {
     index: true,
     follow: true,
   },
+
   alternates: {
     canonical: "/",
   },
+
   openGraph: {
     type: "website",
     locale: "es_PE",
-    title: "Services Procurement",
-    description:
-      "Consultoría estratégica para transformar la cadena de suministro en una ventaja competitiva sostenible.",
+    url: "/",
     siteName: "Services Procurement",
+    title: "Services Procurement | Supply Chain, Procurement y Logística",
+    description:
+      "Consultoría especializada en procurement, logística y cadena de suministro. Transformamos conocimiento operativo en mejores decisiones y ventaja competitiva.",
+    images: [
+      {
+        url: "/images/hero/hero-operacion-minera.png",
+        alt: "Services Procurement - Supply Chain, Procurement y Logística",
+      },
+    ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Services Procurement",
+    title: "Services Procurement | Supply Chain, Procurement y Logística",
     description:
-      "Consultoría estratégica para transformar la cadena de suministro.",
+      "Consultoría especializada en procurement, logística y cadena de suministro.",
+    images: ["/images/hero/hero-operacion-minera.png"],
   },
 };
 
@@ -66,9 +87,9 @@ export default function RootLayout({
   return (
     <html lang="es" translate="no" suppressHydrationWarning>
       <body className={`${inter.className} bg-white text-slate-900 antialiased`}>
-  {children}
-  <Footer />
-</body>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
