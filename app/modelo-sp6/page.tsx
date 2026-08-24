@@ -2,9 +2,9 @@ import Header from "@/components/layout/Header";
 
 import Hero from "@/components/modelo-sp6/Hero";
 import Introduction from "@/components/modelo-sp6/Introduction";
-import Capabilities from "@/components/modelo-sp6/Capabilities";
 import Process from "@/components/modelo-sp6/Process";
-import Benefits from "@/components/modelo-sp6/Benefits";
+import Timeline from "@/components/modelo-sp6/Timeline";
+import Capabilities from "@/components/modelo-sp6/Capabilities";
 import CTA from "@/components/modelo-sp6/CTA";
 
 export const metadata = {
@@ -20,9 +20,9 @@ export default function ModeloSP6Page() {
 
       <Hero />
       <Introduction />
-      <Capabilities />
       <Process />
-      <Benefits />
+      <Timeline />
+      <Capabilities />
       <CTA />
     </main>
   );
