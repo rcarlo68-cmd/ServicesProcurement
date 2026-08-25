@@ -98,10 +98,13 @@ export default function Process() {
   const updateScrollButtons = () => {
     if (!carouselRef.current) return;
 
-    const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
+    const { scrollLeft, scrollWidth, clientWidth } =
+      carouselRef.current;
 
     setCanScrollLeft(scrollLeft > 5);
-    setCanScrollRight(scrollLeft + clientWidth < scrollWidth - 5);
+    setCanScrollRight(
+      scrollLeft + clientWidth < scrollWidth - 5
+    );
   };
 
   const scrollCarousel = (direction: "left" | "right") => {
@@ -171,7 +174,8 @@ export default function Process() {
                 key={step.number}
                 className="
                   flex
-                  h-[470px]
+                  h-auto
+                  min-h-[470px]
                   w-[88%]
                   shrink-0
                   snap-center
@@ -182,35 +186,70 @@ export default function Process() {
                   bg-white/[0.025]
                   p-6
                   backdrop-blur-sm
-                  sm:h-[480px]
+
+                  sm:min-h-[480px]
                   sm:w-[72%]
                   sm:p-7
+
                   lg:h-[500px]
+                  lg:min-h-0
                   lg:w-[760px]
                   lg:p-8
                 "
               >
                 {/* Card Header */}
                 <div className="border-b border-white/10 pb-6">
-                  <div className="flex items-start justify-between gap-6">
-                    <div>
+                  <div
+                    className="
+                      flex
+                      flex-col
+                      gap-4
+
+                      sm:flex-row
+                      sm:items-start
+                      sm:justify-between
+                      sm:gap-6
+                    "
+                  >
+                    <div className="min-w-0">
                       <div className="text-4xl font-extralight text-[#D4AF37] sm:text-5xl">
                         {step.number}
                       </div>
 
-                      <h3 className="mt-2 text-2xl font-light text-white sm:text-3xl">
+                      <h3 className="mt-2 text-2xl font-light leading-tight text-white sm:text-3xl">
                         {step.title}
                       </h3>
                     </div>
 
-                    <p className="max-w-[210px] pt-2 text-sm leading-6 text-slate-400">
+                    <p
+                      className="
+                        max-w-none
+                        pt-0
+                        text-sm
+                        leading-6
+                        text-slate-400
+
+                        sm:max-w-[210px]
+                        sm:pt-2
+                      "
+                    >
                       {step.headline}
                     </p>
                   </div>
                 </div>
 
                 {/* Columns */}
-                <div className="mt-7 grid grid-cols-1 gap-7 sm:grid-cols-3 sm:gap-5">
+                <div
+                  className="
+                    mt-7
+                    grid
+                    grid-cols-1
+                    gap-7
+
+                    sm:grid-cols-3
+                    sm:gap-5
+                  "
+                >
                   {step.columns.map((column) => (
                     <div key={column.title}>
                       <div className="mb-4 h-px w-8 bg-[#D4AF37]" />
@@ -226,7 +265,7 @@ export default function Process() {
                   ))}
                 </div>
 
-                {/* RESULTADO — siempre abajo */}
+                {/* Resultado */}
                 <div className="mt-auto border-t border-white/10 pt-6">
                   <div className="mb-3 text-[10px] font-semibold uppercase tracking-[0.3em] text-[#D4AF37]">
                     RESULTADO
@@ -255,6 +294,7 @@ export default function Process() {
                 h-10
                 w-10
                 -translate-y-1/2
+                cursor-pointer
                 items-center
                 justify-center
                 rounded-full
@@ -264,8 +304,11 @@ export default function Process() {
                 text-[#D4AF37]
                 backdrop-blur-md
                 transition-all
+                duration-300
                 hover:bg-[#D4AF37]
                 hover:text-[#111111]
+                active:bg-[#D4AF37]
+                active:text-[#111111]
               "
             >
               <ChevronLeft className="h-5 w-5" />
@@ -287,6 +330,7 @@ export default function Process() {
                 h-10
                 w-10
                 -translate-y-1/2
+                cursor-pointer
                 items-center
                 justify-center
                 rounded-full
@@ -296,8 +340,11 @@ export default function Process() {
                 text-[#D4AF37]
                 backdrop-blur-md
                 transition-all
+                duration-300
                 hover:bg-[#D4AF37]
                 hover:text-[#111111]
+                active:bg-[#D4AF37]
+                active:text-[#111111]
               "
             >
               <ChevronRight className="h-5 w-5" />

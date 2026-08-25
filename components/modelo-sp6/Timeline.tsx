@@ -107,38 +107,59 @@ export default function Timeline() {
           </div>
 
           {/* Mobile */}
-          <div className="space-y-3 md:hidden">
+<div className="md:hidden">
+  <div className="overflow-x-auto rounded-2xl border border-white/10 bg-white/[0.02]">
+    <div className="min-w-[620px]">
 
-            {gantt.map((row) => (
-              <div
-                key={row.label}
-                className="rounded-xl border border-white/10 bg-white/[0.02] p-4"
-              >
-                <div className="mb-4 text-xs text-slate-300">
-                  {row.label}
-                </div>
+      {/* Month header */}
+      <div className="grid grid-cols-[190px_repeat(9,1fr)] border-b border-white/10">
+        <div className="p-4 text-[10px] uppercase tracking-[0.2em] text-slate-600">
+          FASE
+        </div>
 
-                <div className="grid grid-cols-9 gap-1">
-                  {row.months.map((active, index) => (
-                    <div key={index} className="text-center">
-
-                      <div
-                        className={`h-2 rounded-sm ${
-                          active
-                            ? "bg-[#D4AF37]"
-                            : "bg-white/[0.06]"
-                        }`}
-                      />
-
-                      <span className="mt-1 block text-[8px] text-slate-600">
-                        M{index + 1}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
+        {Array.from({ length: 9 }, (_, index) => (
+          <div
+            key={index}
+            className="border-l border-white/5 p-4 text-center text-[10px] text-slate-600"
+          >
+            M{index + 1}
           </div>
+        ))}
+      </div>
+
+      {/* Rows */}
+      {gantt.map((row, rowIndex) => (
+        <div
+          key={row.label}
+          className={`grid grid-cols-[190px_repeat(9,1fr)] ${
+            rowIndex < gantt.length - 1
+              ? "border-b border-white/10"
+              : ""
+          }`}
+        >
+          <div className="flex items-center px-4 py-5 text-xs text-slate-300">
+            {row.label}
+          </div>
+
+          {row.months.map((active, index) => (
+            <div
+              key={index}
+              className="flex min-h-[58px] items-center border-l border-white/5 px-1.5"
+            >
+              {active ? (
+                <div className="h-5 w-full rounded-sm bg-[#D4AF37]/80" />
+              ) : null}
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <p className="mt-3 text-[10px] text-slate-600">
+    Desliza horizontalmente para ver los 9 meses.
+  </p>
+</div>
 
           {/* Note */}
           <p className="mt-5 max-w-3xl text-xs leading-6 text-slate-500">
