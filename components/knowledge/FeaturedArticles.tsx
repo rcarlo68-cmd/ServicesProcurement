@@ -6,9 +6,20 @@ import { useRef, useState } from "react";
 import { knowledge } from "@/data/knowledge";
 import ResourceCard from "./ResourceCard";
 
-const articles = knowledge.filter(
-  (resource) => resource.featured
-);
+const articles = knowledge
+  .filter((resource) => resource.type === "newsletter")
+  .sort((a, b) => {
+    const dateA = new Date(
+      a.publishedAt.split("/").reverse().join("-")
+    ).getTime();
+
+    const dateB = new Date(
+      b.publishedAt.split("/").reverse().join("-")
+    ).getTime();
+
+    return dateB - dateA;
+  })
+  .slice(0, 3);
 
 export default function FeaturedArticles() {
   const carouselRef = useRef<HTMLDivElement>(null);

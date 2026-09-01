@@ -139,7 +139,8 @@ Un comprador excepcional comprende el negocio, anticipa los riesgos y crea valor
 
     featured: true,
 
-    linkedinUrl: "",
+    linkedinUrl:
+  "https://www.linkedin.com/feed/update/urn:li:activity:7487507190497529856/",
 
     tags: [
       "Procurement",
@@ -541,8 +542,7 @@ Tal vez allí se encuentre una de las diferencias entre diseñar procesos para o
 
   featured: true,
 
-  linkedinUrl:
-    "https://www.linkedin.com/pulse/follow-money-y-despu%C3%A9s-qu%C3%A9-ricardo-cabrera-casas-k73qe/",
+  linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7490406293187506176/",
 
   tags: [
     "Auditoría Logística",
@@ -743,6 +743,276 @@ La mentoría no forma personas: protege a la operación.
     "Logística Minera",
     "Gestión del Talento",
     "Conocimiento Operativo",
-  ],
-},
+      ],
+  },
+
+  
+
+
+  {
+    id: "audit-si-las-supply-chains-son-resilientes-compliance-tambien-deberia-serlo",
+    slug: "si-las-supply-chains-son-resilientes-compliance-tambien-deberia-serlo",
+    pillar: "audit",
+    type: "newsletter",
+    title: "Si las Supply Chains son resilientes, ¿Compliance también debería serlo?",
+    excerpt:
+      "La resiliencia de la cadena de suministro también transforma el mapa de riesgos y exige que Compliance y Control Interno evolucionen para responder a una operación más dinámica y compleja.",
+    readingTime: 4,
+    publishedAt: "25/08/2026",
+    author: "Ricardo Cabrera",
+    image: "/images/knowledge/audit/audit-hero.png",
+    featured: true,
+    linkedinUrl:
+      "https://www.linkedin.com/feed/update/urn:li:ugcPost:7494946530299285504/",
+    tags: [
+      "SupplyChain",
+      "Resiliencia",
+      "Compliance",
+      "ControlInterno",
+      "Auditoria",
+      "GestionDeRiesgos",
+      "Logistica",
+      "Mineria",
+      "Gobernanza",
+      "SupplyChainManagement",
+    ],
+  },
+
+
+  {
+    id: "talent-como-destruir-una-organizacion-sin-dejar-de-cumplir-las-metas",
+    slug: "como-destruir-una-organizacion-sin-dejar-de-cumplir-las-metas",
+    pillar: "talent",
+    type: "newsletter",
+    title: "Cómo destruir una organización sin dejar de cumplir las metas",
+    excerpt:
+      "Una organización puede cumplir todas sus metas y aun así estar enfermando. Los indicadores suelen mostrar lo que una empresa produce hoy, pero no siempre revelan lo que está perdiendo para mañana. La diferencia entre desempeño y salud organizacional puede ser más importante de lo que creemos.",
+    readingTime: 3,
+    publishedAt: "16/06/2026",
+    author: "Ricardo Cabrera",
+    image: "/images/knowledge/talent/talent-hero.png",
+    featured: false,
+    linkedinUrl:
+      "https://www.linkedin.com/feed/update/urn:li:activity:7472652967557636096/",
+    tags: [
+      "Liderazgo",
+      "CulturaOrganizacional",
+      "GestionDelTalento",
+      "Personas",
+      "Desempeño",
+      "Gestion",
+    ],
+  },
+
+
+  {
+    id: "talent-las-personas-son-realmente-lo-mas-importante-en-una-organizacion",
+    slug: "las-personas-son-realmente-lo-mas-importante-en-una-organizacion",
+    pillar: "talent",
+    type: "newsletter",
+    title: "¿Las personas son realmente lo más importante en una organización?",
+    excerpt:
+      "Los valores de una organización no se demuestran en un cartel ni en un discurso de bienvenida, sino en cómo trata, escucha, reconoce y acompaña a las personas durante toda su trayectoria, especialmente cuando esa relación llega a su fin.",
+    readingTime: 3,
+    publishedAt: "14/07/2026",
+    author: "Ricardo Cabrera",
+    image: "/images/knowledge/talent/talent-hero.png",
+    featured: true,
+    linkedinUrl:
+      "https://www.linkedin.com/feed/update/urn:li:activity:7482796129210904576/",
+    tags: [
+      "Liderazgo",
+      "CulturaOrganizacional",
+      "Personas",
+      "ExcelenciaOperacional",
+      "GestionDelTalento",
+      "Mineria",
+    ],
+  },
+
+
+  {
+    id: "operations-eres-bueno-haciendo-logistica-cuentame-como-lo-haces",
+    slug: "eres-bueno-haciendo-logistica-cuentame-como-lo-haces",
+    pillar: "operations",
+    type: "newsletter",
+    title: "¿Eres bueno haciendo logística? Cuéntame cómo lo haces...",
+    excerpt:
+      "Durante los años 2001–2003, enfrentamos en la minería peruana una de las crisis más severas provocadas por el desplome del precio del zinc. Como jefe de logística en una de las principales productoras del país, viví en carne propia lo que significó mantener una operación minera funcionando sin recursos, sin crédito y con decisiones que se tomaban al filo de lo posible.",
+    readingTime: 4,
+    publishedAt: "08/07/2025",
+    author: "Ricardo Cabrera",
+    image: "/images/knowledge/operations/operation-hero.png",
+    featured: false,
+    linkedinUrl:
+      "https://www.linkedin.com/pulse/eres-bueno-haciendo-log%C3%ADstica-cu%C3%A9ntame-c%C3%B3mo-lo-cuando-cabrera-casas-nql9e/",
+    tags: [
+      "logística",
+      "gestión logística",
+      "cadena de suministro",
+    ],
+  },
+
+
+  {
+    id: "operations-bloqueos-mineros-el-dia-que-la-logistica-bloqueo",
+    slug: "bloqueos-mineros-el-dia-que-la-logistica-bloqueo",
+    pillar: "operations",
+    type: "newsletter",
+    title: "Bloqueos mineros: el día que la logística bloqueó...",
+    excerpt:
+      "Los bloqueos al corredor minero sur que vemos hoy no son nuevos. En 2007, me tocó liderar logística en una operación minera de zinc que enfrentó una amenaza similar. Tuvimos 15 días para anticiparnos… y no fallamos.",
+    readingTime: 4,
+    publishedAt: "15/07/2025",
+    author: "Ricardo Cabrera",
+    image: "/images/knowledge/operations/operation-hero.png",
+    featured: false,
+    linkedinUrl:
+      "https://www.linkedin.com/pulse/bloqueos-mineros-el-d%C3%ADa-que-la-log%C3%ADstica-bloque%C3%B3-cabrera-casas-eq7qe/",
+    tags: [
+      "logística",
+      "gestión logística",
+      "cadena de suministro. Gestion de Crisis",
+      "Gestion de Riesgos",
+    ],
+  },
+
+
+  {
+    id: "procurement-el-costo-oculto-de-la-urgencia",
+    slug: "el-costo-oculto-de-la-urgencia",
+    pillar: "procurement",
+    type: "newsletter",
+    title: "El costo oculto de la urgencia",
+    excerpt:
+      "Las organizaciones suelen justificar excepciones, sobrecostos y decisiones apresuradas en nombre de la urgencia. Sin embargo, muchas de esas \"emergencias\" no son eventos imprevisibles, sino síntomas de problemas de gestión que se han vuelto normales.",
+    readingTime: 2,
+    publishedAt: "09/06/2026",
+    author: "Ricardo Cabrera",
+    image: "/images/knowledge/procurement/procurement-hero.png",
+    featured: false,
+    linkedinUrl:
+      "https://www.linkedin.com/pulse/el-costo-oculto-de-la-urgencia-ricardo-cabrera-casas-xkphf/",
+    tags: [
+      "Destrucción De Valor",
+      "Fraude Operativo",
+      "Gestión De Riesgos",
+      "Controles Internos",
+      "Excelencia Operacional",
+      "Minería",
+    ],
+  },
+
+
+  {
+    id: "talent-cuando-un-problema-tiene-dueno",
+    slug: "cuando-un-problema-tiene-dueno",
+    pillar: "talent",
+    type: "newsletter",
+    title: "Cuando un problema tiene dueño",
+    excerpt:
+      "¿Por qué algunos problemas permanecen durante meses o incluso años dentro de una organización? A partir de una experiencia real en minería, este artículo explora un fenómeno tan frecuente como invisible: cuando una decisión deja de tener un responsable.",
+    readingTime: 3,
+    publishedAt: "30/06/2026",
+    author: "Ricardo Cabrera",
+    image: "/images/knowledge/talent/talent-hero.png",
+    featured: false,
+    linkedinUrl:
+      "https://www.linkedin.com/pulse/cuando-un-problema-tiene-due%C3%B1o-ricardo-cabrera-cas-tedwe/",
+    tags: [
+      "Responsabilidad Organizacional",
+      "Cultura Organizacional",
+      "Liderazgo",
+      "Excelencia Operacional",
+      "Gestión De Procesos",
+      "Minería",
+    ],
+  },
+
+
+  {
+    id: "talent-nadie-dudaba-del-riesgo",
+    slug: "nadie-dudaba-del-riesgo",
+    pillar: "talent",
+    type: "newsletter",
+    title: "Nadie dudaba del riesgo",
+    excerpt:
+      "¿Qué ocurre cuando una organización tiene profesionales capaces, pero las mejores ideas nunca llegan a escucharse? A partir de una emergencia real en una operación minera, este artículo reflexiona sobre el papel del liderazgo para crear entornos donde las personas se atrevan a proponer, decidir y actuar cuando más se necesita.",
+    readingTime: 3,
+    publishedAt: "07/07/2026",
+    author: "Ricardo Cabrera",
+    image: "/images/knowledge/talent/talent-hero.png",
+    featured: false,
+    linkedinUrl:
+      "https://www.linkedin.com/pulse/nadie-dudaba-del-riesgo-ricardo-cabrera-casas-qvfye/",
+    tags: [
+      "Liderazgo",
+      "Cultura Organizacional",
+      "Toma De Decisiones",
+      "Minería",
+      "Gestión De Riesgos",
+      "Excelencia Operacional",
+    ],
+  },
+
+
+  {
+    id: "operations-tiene-silos-organizacionales-dejelos-asi",
+    slug: "tiene-silos-organizacionales-dejelos-asi",
+    pillar: "operations",
+    type: "newsletter",
+    title: "Tiene silos organizacionales?. Déjelos así",
+    excerpt:
+      "“Hay que romper los silos.”Lo hemos escuchado en clases de maestría, en cursos de gestión, en conferencias y en reuniones de trabajo.Y casi siempre viene acompañado de la misma recomendación: mejorar la comunicación, compartir información, integrar equipos y alinear objetivos.Pero, ¿y si el problema no fueran los silos?",
+    readingTime: 4,
+    publishedAt: "11/08/2026",
+    author: "Ricardo Cabrera",
+    image: "/images/knowledge/operations/operation-hero.png",
+    featured: false,
+    linkedinUrl:
+      "https://www.linkedin.com/pulse/tiene-silos-organizacionales-d%C3%A9jelos-as%C3%AD-ricardo-cabrera-casas-ueq0e/",
+    tags: [
+      "Logística Minera",
+      "Gestión Minera",
+      "Supply Chain",
+      "Pensamiento Sistémico",
+      "Gestión De Procesos",
+      "Liderazgo",
+      "Management",
+      "Excelencia Operacional",
+      "Minería Gestión Empresarial",
+      "HBR",
+    ],
+  },
+
+
+  {
+    id: "operations-puede-una-supply-chain-ser-resiliente-indefinidamente",
+    slug: "puede-una-supply-chain-ser-resiliente-indefinidamente",
+    pillar: "operations",
+    type: "newsletter",
+    title: "¿Puede una Supply Chain ser resiliente indefinidamente?",
+    excerpt:
+      "Hablamos mucho de resiliencia en Supply Chain como la capacidad de enfrentar disrupciones mediante inventarios, proveedores alternativos y planes de contingencia. Pero ¿qué ocurre cuando la crisis se prolonga durante años?",
+    readingTime: 5,
+    publishedAt: "18/08/2026",
+    author: "Ricardo Cabrera",
+    image: "/images/knowledge/operations/operation-hero.png",
+    featured: false,
+    linkedinUrl:
+      "https://www.linkedin.com/pulse/puede-una-supply-chain-ser-resiliente-indefinidamente-cabrera-casas-re04e/",
+    tags: [
+      "Supply Chain",
+      "Resiliencia",
+      "Logística",
+      "Minería",
+      "Logística Minera",
+      "Supply Chain",
+      "Management",
+      "Gestión Operacional",
+      "Crisis",
+      "Liderazgo",
+      "Adaptación.",
+    ],
+  },
 ];

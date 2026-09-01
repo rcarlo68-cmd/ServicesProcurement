@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 import { pillars } from "@/data/pillars";
 import { getResourcesByPillar } from "@/lib/knowledge";
@@ -20,6 +21,17 @@ export default async function PillarPage({
   }
 
   const resources = getResourcesByPillar(pillar);
+  console.log(
+  "PILAR:",
+  pillar,
+  "RECURSOS:",
+  resources.length,
+  resources.map((r) => ({
+    title: r.title,
+    pillar: r.pillar,
+    publishedAt: r.publishedAt,
+  }))
+);
 
   return (
     <main className="min-h-screen bg-[#05070B] text-white">
@@ -72,18 +84,35 @@ export default async function PillarPage({
       {/* RECURSOS */}
       <section className="mx-auto max-w-7xl px-6 py-24">
 
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid auto-rows-fr gap-8 md:grid-cols-2 xl:grid-cols-3">
 
           {resources.map((resource) => (
 
             <article
               key={resource.id}
-              className="group flex flex-col rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-all duration-300 hover:border-[#D4AF37]/30 hover:bg-white/[0.05]"
+              className="
+                group
+                flex
+                h-full
+                min-h-[395px]
+                flex-col
+                rounded-3xl
+                border
+                border-white/10
+                bg-white/[0.03]
+                p-6
+                transition-all
+                duration-300
+                hover:border-[#D4AF37]/30
+                hover:bg-white/[0.05]
+              "
             >
+
+              {/* Tipo + tiempo */}
 
               <div className="flex items-center justify-between">
 
-                <span className="rounded-full border border-[#D4AF37]/30 px-3 py-1 text-xs uppercase tracking-[0.25em] text-[#D4AF37]">
+                <span className="rounded-full border border-[#D4AF37]/30 px-3 py-1 text-[10px] uppercase tracking-[0.28em] text-[#D4AF37]">
                   {
                     {
                       newsletter: "NEWSLETTER",
@@ -94,34 +123,52 @@ export default async function PillarPage({
                   }
                 </span>
 
-                <span className="text-xs uppercase tracking-[0.25em] text-slate-500">
-                  {resource.readingTime} min
+                <span className="text-[10px] uppercase tracking-[0.28em] text-slate-500">
+                  {resource.readingTime} MIN
                 </span>
 
               </div>
 
-              <h2 className="mt-8 text-3xl font-light leading-snug text-white transition-colors duration-300 group-hover:text-[#D4AF37]">
+              {/* Título */}
+
+              <h2 className="mt-5 text-2xl font-light leading-snug text-white transition-colors duration-300 group-hover:text-[#D4AF37]">
                 {resource.title}
               </h2>
 
-              <p className="mt-6 flex-1 leading-8 text-slate-300">
+              {/* Extracto */}
+
+              <p className="mt-4 line-clamp-4 flex-1 text-sm leading-6 text-slate-300">
                 {resource.excerpt}
               </p>
 
-              <div className="mt-8 border-t border-white/10 pt-6">
+              {/* Información + enlace */}
 
-                <div className="flex items-center justify-between text-sm text-slate-500">
+              <div className="mt-5 border-t border-white/10 pt-4">
+
+                <div className="flex items-center justify-between text-xs text-slate-500">
                   <span>{resource.author}</span>
                   <span>{resource.publishedAt}</span>
                 </div>
 
-                <a
-                  href={`/knowledge/${resource.pillar}/${resource.slug}`}
-                  className="mt-6 inline-flex text-sm font-medium text-[#D4AF37] transition-transform duration-300 group-hover:translate-x-1"
-                >
-                  Leer artículo
-                  <span className="ml-2">→</span>
-                </a>
+                {resource.linkedinUrl ? (
+                  <a
+                    href={resource.linkedinUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex text-sm font-medium text-[#D4AF37] transition-transform duration-300 group-hover:translate-x-1"
+                  >
+                    Leer artículo
+                    <span className="ml-2">→</span>
+                  </a>
+                ) : (
+                  <Link
+                    href={`/knowledge/${resource.pillar}/${resource.slug}`}
+                    className="mt-4 inline-flex text-sm font-medium text-[#D4AF37] transition-transform duration-300 group-hover:translate-x-1"
+                  >
+                    Leer artículo
+                    <span className="ml-2">→</span>
+                  </Link>
+                )}
 
               </div>
 
