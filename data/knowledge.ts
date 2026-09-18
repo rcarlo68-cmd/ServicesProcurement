@@ -1015,4 +1015,109 @@ La mentoría no forma personas: protege a la operación.
       "Adaptación.",
     ],
   },
+
+
+  {
+    id: "inventory-la-vuelta-del-gallo-cuando-el-sistema-deja-de-representar-la-realidad",
+    slug: "la-vuelta-del-gallo-cuando-el-sistema-deja-de-representar-la-realidad",
+    pillar: "inventory",
+    type: "newsletter",
+    title: "La vuelta del gallo — cuando el sistema deja de representar la realidad.",
+    excerpt:
+      "En operaciones, hay momentos donde un recorrido dice más que cualquier reporte. En este segundo número comparto lo que encontramos al hacer una simple revisión en campo —la “vuelta del gallo”— y cómo eso dejó en evidencia algo crítico: el sistema ya no representaba la realidad. Y cuando eso ocurre, todo lo demás empieza a fallar.",
+    readingTime: 2,
+    publishedAt: "30/04/2026",
+    author: "Ricardo Cabrera",
+    image: "/images/knowledge/inventory/inventory-hero.png",
+    featured: false,
+    linkedinUrl:
+      "https://www.linkedin.com/pulse/la-vuelta-del-gallo-cuando-el-sistema-deja-de-ricardo-cabrera-casas-h4qqe/",
+    tags: [
+      "#mineria #logistica #supplychain",
+    ],
+  },
+
+
+  {
+    id: "operations-dos-reuniones-de-produccion",
+    slug: "dos-reuniones-de-produccion",
+    pillar: "operations",
+    type: "newsletter",
+    title: "Dos reuniones de producción.",
+    excerpt:
+      "Si quieres entender realmente una organización, no revises primero sus procedimientos. Observa una reunión. Allí descubrirás qué puede decirse, qué debe callarse y cómo se construye —o se deteriora— una cultura operativa.",
+    readingTime: 3,
+    publishedAt: "23/06/2026",
+    author: "Ricardo Cabrera",
+    image: "/images/knowledge/operations/operation-hero.png",
+    featured: false,
+    linkedinUrl:
+      "https://www.linkedin.com/pulse/dos-reuniones-de-producci%C3%B3n-ricardo-cabrera-casas-051he/",
+    tags: [
+      "#CulturaOrganizacional #DestrucciónDeValor #GestiónDeRiesgos #Liderazgo #ExcelenciaOperacional #Minería",
+    ],
+  },
+
+
+  {
+    id: "talent-cuando-llegas-a-la-cima",
+    slug: "cuando-llegas-a-la-cima",
+    pillar: "talent",
+    type: "newsletter",
+    title: "Cuando llegas a la cima",
+    excerpt:
+      "Todos soñamos con llegar a la cima y ser parte de quienes toman las decisiones. Pero cuando las cosas no pintan bien, desde allí arriba descubrimos que no siempre existen buenas opciones. Una decisión financiera tomada en una mesa puede terminar afectando a trabajadores, proveedores y familias. La historia de un señor de seguridad que tuvo que pegar una lista de pagos que no había decidido lleva a una reflexión sobre el verdadero peso de estar en una posición de poder: detrás de cada cifra hay personas, y cada decisión puede ayudar a construir un sueño o contribuir a destruirlo.",
+    readingTime: 4,
+    publishedAt: "01/09/2026",
+    author: "Ricardo Cabrera",
+    image: "/images/knowledge/talent/talent-hero.png",
+    featured: false,
+    linkedinUrl:
+      "https://www.linkedin.com/pulse/cuando-llegas-la-cima-ricardo-cabrera-casas-0uruf/",
+    tags: [
+      "#Liderazgo #Gestion #Etica #TomaDeDecisiones #SupplyChain #Logistica #Mineria #Proveedores #GestionHumana #ExperienciaProfesional",
+    ],
+  },
+
+
+  {
+    id: "procurement-por-que-compras-tarda-tanto",
+    slug: "por-que-compras-tarda-tanto",
+    pillar: "procurement",
+    type: "newsletter",
+    title: "¿Por qué Compras tarda tanto?",
+    excerpt:
+      "¿Por qué Compras tarda tanto? es una pregunta frecuente cuando la operación necesita un repuesto con urgencia. Pero antes de buscar cuánto demoró Compras, quizás habría que preguntarse si Supply Chain hizo lo necesario para que esa necesidad no se convirtiera en una urgencia. La experiencia con equipos críticos, plantas antiguas y contextos comerciales muy diferentes muestra que conocer el lead time no basta: la estrategia de abastecimiento debe anticiparse a la operación.",
+    readingTime: 4,
+    publishedAt: "08/09/2026",
+    author: "Ricardo Cabrera",
+    image: "/images/knowledge/procurement/procurement-hero.png",
+    featured: false,
+    linkedinUrl:
+      "https://www.linkedin.com/pulse/por-qu%C3%A9-compras-tarda-tanto-ricardo-cabrera-casas-9lquf/",
+    tags: [
+      "#SupplyChain #Logística #Abastecimiento #Procurement #Minería #GestiónLogística #Mantenimiento #GestiónDeActivos #EstrategiaDeAbastecimiento #Compras",
+    ],
+  },
+
+
+  {
+    id: "audit-a-proposito-de-compliance-el-problema-no-siempre-esta-donde-dice-el-mapa-de-riesgos",
+    slug: "a-proposito-de-compliance-el-problema-no-siempre-esta-donde-dice-el-mapa-de-riesgos",
+    pillar: "audit",
+    type: "newsletter",
+    title: "…A propósito de Compliance: el problema no siempre está donde dice el mapa de riesgos.",
+    excerpt:
+      "En una sesión de coaching con un funcionario de logística, una duda sobre cómo definir los riesgos de su área nos llevó a revisar dos casos reales de minería. En ambos, el hallazgo visible —piedras en un cisterna y torones de cobre— era apenas la consecuencia final de un proceso mucho más amplio. La reflexión llevó a una pregunta clave: ¿estamos identificando realmente el riesgo o simplemente nombrando el proceso donde finalmente aparece?",
+    readingTime: 5,
+    publishedAt: "15/09/2026",
+    author: "Ricardo Cabrera",
+    image: "/images/knowledge/audit/audit-hero.png",
+    featured: false,
+    linkedinUrl:
+      "https://www.linkedin.com/pulse/prop%C3%B3sito-de-compliance-el-problema-siempre-est%C3%A1-dice-cabrera-casas-eg4af/",
+    tags: [
+      "#Compliance #GestiónDeRiesgos #FraudeOperativo #Logística #SupplyChain #Minería #ControlInterno #CoachingLogístico",
+    ],
+  },
 ];
