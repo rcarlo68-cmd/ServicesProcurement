@@ -15,9 +15,13 @@ const navigation = [
     href: "/",
   },
   {
-  label: "Soluciones",
+  label: "SP6",
   href: "/modelo-sp6",
   },
+  {
+  label: "Servicios",
+  href: "/servicios",
+},
   {
   label: "Nuestra Visión",
   href: "/nuestra-vision",

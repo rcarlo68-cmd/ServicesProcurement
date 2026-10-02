@@ -58,8 +58,15 @@ export default function Footer() {
                 href="/modelo-sp6"
                 className="hover:text-[#D4AF37]"
               >
-                Soluciones
+                SP6
               </Link>
+
+              <Link
+  href="/servicios"
+  className="hover:text-[#D4AF37]"
+>
+  Servicios
+</Link>
 
               <Link
                 href="/nuestra-vision"
@@ -103,45 +110,45 @@ export default function Footer() {
             <nav className="mt-4 flex flex-col gap-2 text-xs text-slate-400 lg:mt-5 lg:gap-3 lg:text-sm">
 
               <Link
-                href="/knowledge/procurement"
+                href="/servicios/procurement"
                 className="hover:text-[#D4AF37]"
               >
                 Procurement
               </Link>
 
               <Link
-                href="/knowledge/inventory"
+                href="/servicios/almacenes-inventarios"
                 className="hover:text-[#D4AF37]"
               >
                 Almacenes e Inventarios
               </Link>
 
               <Link
-                href="/knowledge/operations"
+                href="/servicios/gestion-operaciones-logisticas"
                 className="hover:text-[#D4AF37]"
               >
-                Operaciones y Distribución
+                Gestión de Operaciones Logísticas
               </Link>
 
               <Link
-                href="/knowledge/audit"
+                href="/servicios/auditoria-logistica"
                 className="hover:text-[#D4AF37]"
               >
                 Auditoría Logística
               </Link>
 
               <Link
-                href="/knowledge/digital"
+                href="/servicios/tecnologia"
                 className="hover:text-[#D4AF37]"
               >
-                Transformación Digital
+                Tecnología
               </Link>
 
               <Link
-                href="/knowledge/talent"
+                href="/servicios/talento"
                 className="hover:text-[#D4AF37]"
               >
-                Desarrollo del Talento
+                Talento
               </Link>
 
             </nav>
