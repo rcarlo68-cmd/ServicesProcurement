@@ -116,7 +116,7 @@ export default function ServiciosPage() {
       
       
       
-      {/* DESARROLLO PROFESIONAL */}
+            {/* DESARROLLO PROFESIONAL */}
       <section id="desarrollo-profesional" className="border-t border-white/10 scroll-mt-24">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10 xl:px-12">
           <div className="mb-12">
@@ -132,12 +132,12 @@ export default function ServiciosPage() {
             </h2>
 
             <p className="mt-5 max-w-4xl text-base leading-7 text-slate-400 md:text-lg">
-              Programas de mentoría, coaching y capacitación conectados con
-              la realidad de la operación minera.
+              Mentoría, coaching, capacitación y preparación profesional
+              conectados con los desafíos reales de Logística y Supply Chain.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
             {/* 01 — MENTORÍA LOGÍSTICA */}
             <article className="flex flex-col">
               <img
@@ -152,7 +152,8 @@ export default function ServiciosPage() {
                 </h3>
 
                 <p className="mt-4 text-sm leading-6 text-slate-400">
-                  Trabaja sobre situaciones reales de tu experiencia profesional.
+                  Analiza desafíos concretos de tu trabajo con el aporte de
+                  experiencia operativa.
                 </p>
 
                 <Link
@@ -178,7 +179,8 @@ export default function ServiciosPage() {
                 </h3>
 
                 <p className="mt-4 text-sm leading-6 text-slate-400">
-                  Desarrolla tu liderazgo, tu criterio y tu capacidad de decisión.
+                  Desarrolla tus habilidades para afrontar desafíos y crecer
+                  profesionalmente.
                 </p>
 
                 <Link
@@ -204,12 +206,39 @@ export default function ServiciosPage() {
                 </h3>
 
                 <p className="mt-4 text-sm leading-6 text-slate-400">
-                  Amplía tus conocimientos con formación conectada con la realidad
-                  de la operación.
+                  Amplía tus conocimientos con formación conectada con la
+                  realidad de la operación.
                 </p>
 
                 <Link
                   href="/servicios/capacitacion-seminarios"
+                  className="mt-auto inline-flex items-center pt-8 text-xs font-semibold uppercase tracking-[0.14em] text-[#D4AF37] transition-colors hover:text-white"
+                >
+                  Conocer más
+                </Link>
+              </div>
+            </article>
+
+            {/* 04 — ASESORÍA PARA ENTREVISTAS */}
+            <article className="flex flex-col">
+              <img
+                src="/images/desarrollo-profesional/asesoria-entrevistas.png"
+                alt="Profesional de logística preparándose para una entrevista laboral"
+                className="aspect-[16/9] w-full object-cover"
+              />
+
+              <div className="mt-5 flex flex-1 flex-col border-t border-white/10 pt-6">
+                <h3 className="text-xl font-light text-white">
+                  Asesoría para entrevistas
+                </h3>
+
+                <p className="mt-4 text-sm leading-6 text-slate-400">
+                  Practica preguntas técnicas y situaciones de logística para
+                  sustentar tu experiencia y tu criterio profesional.
+                </p>
+
+                <Link
+                  href="/servicios/asesoria-entrevistas"
                   className="mt-auto inline-flex items-center pt-8 text-xs font-semibold uppercase tracking-[0.14em] text-[#D4AF37] transition-colors hover:text-white"
                 >
                   Conocer más

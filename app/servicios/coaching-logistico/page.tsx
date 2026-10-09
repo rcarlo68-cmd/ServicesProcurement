@@ -1,11 +1,5 @@
 import Header from "@/components/layout/Header";
 
-const whatsappMessage = encodeURIComponent(
-  "Hola, estoy interesado/a en el Coaching Logístico de Services Procurement. Me gustaría conversar sobre el proceso."
-);
-
-const whatsappUrl = `https://wa.me/51953449850?text=${whatsappMessage}`;
-
 const capabilities = [
   {
     number: "01",
@@ -67,6 +61,8 @@ const process = [
 ];
 
 export default function CoachingLogisticoPage() {
+  const contactoUrl = "/contacto";
+
   return (
     <main className="min-h-screen bg-[#05070B] text-white">
       <Header variant="dark" />
@@ -81,23 +77,22 @@ export default function CoachingLogisticoPage() {
           </p>
 
           <h1 className="mt-7 max-w-5xl text-[clamp(2.6rem,5vw,5rem)] font-light leading-[1.04] tracking-[-0.045em]">
-            Potencia tu liderazgo.
+            Desarrolla tus habilidades.
             <br />
             <span className="text-[#D4AF37]">
-              Amplía tus posibilidades profesionales.
+              Crece profesionalmente.
             </span>
           </h1>
 
           <p className="mt-8 max-w-3xl text-lg leading-8 text-slate-400 md:text-xl md:leading-9">
-            Reconoce tus fortalezas, desarrolla tu criterio y fortalece tu
-            capacidad para tomar decisiones, influir y asumir nuevos desafíos
-            en tu carrera en Supply Chain.
+            Fortalece tus habilidades de comunicación, influencia, liderazgo
+            y toma de decisiones para afrontar mejor tus desafíos profesionales
+            y prepararte para asumir nuevas responsabilidades en Logística y
+            Supply Chain.
           </p>
 
           <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={contactoUrl}
             className="mt-10 inline-flex h-14 items-center justify-center rounded-full bg-[#D4AF37] px-8 text-[15px] font-semibold text-[#111111] transition-all duration-300 hover:brightness-110"
           >
             CONVERSEMOS
@@ -107,13 +102,13 @@ export default function CoachingLogisticoPage() {
           </a>
 
           <div className="mt-6 flex flex-wrap items-center gap-3">
-  <span className="inline-flex items-center rounded-full border border-[#D4AF37]/40 px-4 py-2 text-xs font-semibold tracking-wide text-[#D4AF37]">
-    Primera sesión introductoria GRATUITA
-  </span>
-  <span className="text-sm text-slate-500">Modalidad virtual</span>
-</div>
-
-
+            <span className="inline-flex items-center rounded-full border border-[#D4AF37]/40 px-4 py-2 text-xs font-semibold tracking-wide text-[#D4AF37]">
+              Primera sesión introductoria GRATUITA
+            </span>
+            <span className="text-sm text-slate-500">
+              Modalidad virtual
+            </span>
+          </div>
         </div>
       </section>
 
@@ -121,36 +116,34 @@ export default function CoachingLogisticoPage() {
       <section className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10 xl:px-12">
           <p className="text-sm font-semibold tracking-[0.2em] text-[#D4AF37]">
-            LA REALIDAD DEL LIDERAZGO
+            LA REALIDAD PROFESIONAL
           </p>
 
           <h2 className="mt-5 max-w-4xl text-3xl font-light leading-tight tracking-[-0.03em] md:text-4xl">
-            Liderar en minería exige mucho más que conocer la operación.
+            Saber de logística no siempre basta para afrontar sus desafíos.
           </h2>
 
           <div className="mt-8 max-w-4xl space-y-6 text-base leading-8 text-slate-400 md:text-lg">
             <p>
-              La presión por cumplir los objetivos de producción, las decisiones
-              que no pueden esperar y las exigencias de distintos niveles
-              jerárquicos forman parte de la realidad cotidiana. También hay
-              jefes exigentes, prioridades que compiten entre sí y situaciones
-              en las que necesitas sostener una posición profesional frente a
-              personas con mayor autoridad formal.
+              En Logística y Supply Chain puedes conocer los procesos y tener
+              experiencia, pero aun así enfrentarte a conversaciones difíciles,
+              desacuerdos entre áreas, decisiones bajo presión o situaciones
+              en las que necesitas defender una posición profesional.
             </p>
 
             <p>
-              En ese entorno, desarrollar tu liderazgo significa reconocer el
-              valor de tu criterio, expresar tus argumentos con claridad,
-              defender tus decisiones con fundamento y gestionar las diferencias
-              sin perder de vista los objetivos de la organización.
+              Afrontar estos desafíos también exige habilidades: comunicar tus
+              argumentos con claridad, gestionar diferencias, influir sin
+              confrontar, reconocer tus fortalezas y decidir cómo actuar según
+              las circunstancias.
             </p>
           </div>
 
           <div className="mt-10 max-w-4xl border-l-2 border-[#D4AF37] pl-6">
             <p className="text-xl font-light leading-8 text-white md:text-2xl">
-              Desarrollar la seguridad para defender tu posición sin imponerla,
-              influir sin confrontar y construir acuerdos sin renunciar a tu
-              criterio profesional.
+              El coaching trabaja sobre ti y tu forma de afrontar los desafíos:
+              desarrollar tus capacidades para que puedas actuar con mayor
+              claridad, autonomía y confianza.
             </p>
           </div>
         </div>
@@ -280,15 +273,14 @@ export default function CoachingLogisticoPage() {
           </h2>
 
           <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-400">
-  Conversemos sobre tus objetivos, los desafíos que enfrentas y lo que buscas
-  desarrollar. Exploremos si el Coaching Logístico responde a lo que necesitas
-  y cómo podría acompañarte en tu desarrollo profesional.
-</p>
+            Conversemos sobre tus objetivos, los desafíos que enfrentas y lo
+            que buscas desarrollar. Exploremos si el Coaching Logístico
+            responde a lo que necesitas y cómo podría acompañarte en tu
+            desarrollo profesional.
+          </p>
 
           <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={contactoUrl}
             className="mt-10 inline-flex h-14 items-center justify-center rounded-full bg-[#D4AF37] px-8 text-[15px] font-semibold text-[#111111] transition-all duration-300 hover:brightness-110"
           >
             CONVERSEMOS

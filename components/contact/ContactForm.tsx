@@ -313,24 +313,31 @@ export default function ContactForm() {
   className="w-full min-w-0 rounded-2xl border border-white/10 bg-[#0C1016] px-5 py-4 text-white outline-none transition-all duration-300 focus:border-[#D4AF37]"
 />
 
-                <select
-                  className="w-full min-w-0 rounded-2xl border border-white/10 bg-[#0C1016] px-5 py-4 text-white outline-none transition-all duration-300 focus:border-[#D4AF37]"
-                  name="service"
-value={form.service}
-onChange={handleChange}
-                >
-                  <option value="" disabled>
-                    Área de interés
-                  </option>
+               <select
+  className="w-full min-w-0 rounded-2xl border border-white/10 bg-[#0C1016] px-5 py-4 text-white outline-none transition-all duration-300 focus:border-[#D4AF37]"
+  name="service"
+  value={form.service}
+  onChange={handleChange}
+>
+  <option value="" disabled>
+    Área de interés
+  </option>
 
-                  <option>Modelo SP6</option>
-                  <option>Consultoría</option>
-                  <option>Auditoría Logística</option>
-                  <option>SP Knowledge</option>
-                  <option>Capacitación</option>
-                  <option>Otro</option>
-
-                </select>
+  <option value="Modelo SP6">Modelo SP6</option>
+  <option value="Consultoría">Consultoría</option>
+  <option value="Auditoría Logística">Auditoría Logística</option>
+  <option value="SP Knowledge">SP Knowledge</option>
+  <option value="Capacitación">Capacitación</option>
+  <option value="Coaching Logístico">Coaching Logístico</option>
+  <option value="Mentoría Logística">Mentoría Logística</option>
+  <option value="Asesoría para entrevistas">
+    Asesoría para entrevistas
+  </option>
+  <option value="Capacitación y Seminarios">
+    Capacitación y Seminarios
+  </option>
+  <option value="Otro">Otro</option>
+</select>
 
                 <textarea
   name="message"

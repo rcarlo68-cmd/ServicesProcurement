@@ -1,10 +1,6 @@
 import Header from "@/components/layout/Header";
 
-const whatsappMessage = encodeURIComponent(
-  "Hola, estoy interesado/a en las Capacitaciones y Seminarios de Services Procurement. Me gustaría recibir información sobre los temas y las modalidades disponibles."
-);
-
-const whatsappUrl = `https://wa.me/51953449850?text=${whatsappMessage}`;
+const contactoUrl = "/contacto";
 
 const topics = [
   {
@@ -62,13 +58,11 @@ export default function CapacitacionSeminariosPage() {
           </p>
 
           <a
-  href={whatsappUrl}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-10 inline-flex h-14 items-center justify-center rounded-full bg-[#D4AF37] px-8 text-[15px] font-semibold text-[#111111] transition-all duration-300 hover:brightness-110"
->
-  SOLICITAR INFORMACIÓN
-</a>
+            href={contactoUrl}
+            className="mt-10 inline-flex h-14 items-center justify-center rounded-full bg-[#D4AF37] px-8 text-[15px] font-semibold text-[#111111] transition-all duration-300 hover:brightness-110"
+          >
+            SOLICITAR INFORMACIÓN
+          </a>
 
           <p className="mt-5 text-sm text-slate-500">
             Modalidad virtual · Presencial a solicitud de empresas
@@ -183,17 +177,17 @@ export default function CapacitacionSeminariosPage() {
           </h2>
 
           <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-400">
-            Cuéntanos qué tema te interesa, qué necesitas aprender o qué desafío quieres abordar con tu equipo. Te brindaremos información sobre las alternativas de capacitación y seminarios disponibles.
+            Cuéntanos qué tema te interesa, qué necesitas aprender o qué desafío
+            quieres abordar con tu equipo. Te brindaremos información sobre las
+            alternativas de capacitación y seminarios disponibles.
           </p>
 
           <a
-  href={whatsappUrl}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-10 inline-flex h-14 items-center justify-center rounded-full bg-[#D4AF37] px-8 text-[15px] font-semibold text-[#111111] transition-all duration-300 hover:brightness-110"
->
-  SOLICITAR INFORMACIÓN
-</a>
+            href={contactoUrl}
+            className="mt-10 inline-flex h-14 items-center justify-center rounded-full bg-[#D4AF37] px-8 text-[15px] font-semibold text-[#111111] transition-all duration-300 hover:brightness-110"
+          >
+            SOLICITAR INFORMACIÓN
+          </a>
 
           <p className="mt-8 text-sm text-slate-500">
             Services Procurement · Capacitación y Seminarios
